@@ -16,4 +16,6 @@ Route::get('/', 'MoviesController@index');
 
 
 // Resource for Movie CRUD functionallity
-Route::resource('movies', 'MoviesController');
+Route::resource('movies', 'MoviesController',[
+  'parameters' => 'singular'
+]);
