@@ -3,7 +3,7 @@
 @section('content')
   <div class="container">
       <h1>{{$review->title}}</h1>
-      <p>{{$review->body}}</p>
+      <p>{!! Markdown::convertToHtml($review->body) !!}</p>
 
       <a href="/movies/{{$review->id}}/edit" class="btn btn-primary">Update review</a>
 
