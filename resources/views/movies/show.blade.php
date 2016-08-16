@@ -1,7 +1,19 @@
 @extends('app')
 
 @section('content')
-  <h1>Show single movie review</h1>
-  <p>Showing id {{ $id }}</p>
+  <div class="container">
+      <h1>{{$review->title}}</h1>
+      <p>{{$review->body}}</p>
+
+      <a href="/movies/{{$review->id}}/edit" class="btn btn-primary">Update review</a>
+
+      <br>
+      <br>
+
+      @include('movies._deleteAction')
+
+  </div>
+
+
 
 @endsection

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Http\Requests\MovieRequest;
+
+use App\Movie;
+
 class MoviesController extends Controller
 {
     /**
@@ -15,8 +19,8 @@ class MoviesController extends Controller
      */
     public function index()
     {
-        //
-        return view('movies.index');
+        $movies = Movie::latest()->get();
+        return view('movies.index', compact('movies'));
     }
 
     /**
@@ -32,12 +36,20 @@ class MoviesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request\MovieRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MovieRequest $request)
     {
-        //
+
+        // Validation is handled in CreateMovieRequest class
+
+        // create entry in Database
+        Movie::create($request->all());
+
+        // redirect to movies index page
+        return redirect('/');
+
     }
 
     /**
@@ -48,7 +60,8 @@ class MoviesController extends Controller
      */
     public function show($id)
     {
-        return view('movies.show');
+        $review = Movie::findOrFail($id);
+        return view('movies.show', compact('review'));
     }
 
     /**
@@ -59,7 +72,8 @@ class MoviesController extends Controller
      */
     public function edit($id)
     {
-        return view('movies.edit');
+        $review = Movie::findOrFail($id);
+        return view('movies.edit', compact('review'));
     }
 
     /**
@@ -69,9 +83,14 @@ class MoviesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(MovieRequest $request, $id)
     {
-        //
+      $review = Movie::findOrFail($id);
+
+      $review->update($request->all());
+
+      return redirect('/');
+
     }
 
     /**
@@ -82,6 +101,10 @@ class MoviesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $review = Movie::findOrFail($id);
+
+        $review->delete();
+
+        return redirect('/');
     }
 }
