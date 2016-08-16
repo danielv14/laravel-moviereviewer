@@ -14,5 +14,8 @@
     @endforeach
   </div>
 
+  {{ $movies->links() }}
+
+
 
 @endsection

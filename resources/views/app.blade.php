@@ -7,8 +7,8 @@
 </head>
 <body>
   @include('layouts.navbar')
-  @yield('content')
 
+  @yield('content')
 
   @include('layouts.scripts')
 </body>

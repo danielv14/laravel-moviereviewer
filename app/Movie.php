@@ -12,4 +12,13 @@ class Movie extends Model
       'trailer',
       'rating'
     ];
+
+    /**
+    * Scope a query to fetch latest and paginate it.
+    *
+    */
+    public function scopeLatestPaginated($query, $pagination)
+    {
+      return $query->orderBy('created_at', 'desc')->simplePaginate($pagination);
+    }
 }

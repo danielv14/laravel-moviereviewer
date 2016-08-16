@@ -19,7 +19,7 @@ class MoviesController extends Controller
      */
     public function index()
     {
-        $movies = Movie::latest()->get();
+        $movies = Movie::latestPaginated(2);
         return view('movies.index', compact('movies'));
     }
 
