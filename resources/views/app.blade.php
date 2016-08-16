@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Movie Reviewer</title>
-  <link rel="stylesheet" href="/css/app.css" media="screen" title="no title" charset="utf-8">
-
+  @include('layouts.stylesheets')
 </head>
 <body>
   @include('layouts.navbar')

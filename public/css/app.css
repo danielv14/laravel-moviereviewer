@@ -5730,4 +5730,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  font-family: 'Lato', sans-serif; }
+
 /*# sourceMappingURL=app.css.map */
