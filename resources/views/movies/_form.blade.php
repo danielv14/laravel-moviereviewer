@@ -48,9 +48,7 @@
       ]) !!}
   </div>
 
-  <div class="form-group">
-    {!! Form::submit($submit, ['class' => 'btn btn-primary form-control']) !!}
-  </div>
+
 
 </div>
 
@@ -65,4 +63,8 @@
       ]) !!}
   </div>
 
+</div>
+
+<div class="form-group">
+  {!! Form::submit($submit, ['class' => 'btn btn-primary center-block']) !!}
 </div>
