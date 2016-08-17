@@ -5746,7 +5746,8 @@ button.close {
 
 .jumbotron {
   background-color: #D53882;
-  border-bottom: 25px solid #d9498d; }
+  border-bottom: 25px solid #d9498d;
+  margin-bottom: 0px !important; }
   .jumbotron h1, .jumbotron p {
     color: white; }
   .jumbotron h1 {
@@ -5783,6 +5784,13 @@ article.reviews {
   article.reviews a {
     margin-top: 15px; }
 
+article.review {
+  margin-top: 0px;
+  margin-bottom: 75px; }
+
+.btn-group-container {
+  margin: 30px; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
@@ -5791,11 +5799,14 @@ h1, h2, h3, h4 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.22em;
+  font-size: 1.25em;
   line-height: 1.6em; }
 
 p.lead {
   font-size: 1.3em;
   color: gray; }
+
+a.navbar-brand {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=app.css.map */

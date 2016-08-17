@@ -9,11 +9,15 @@ h1, h2, h3, h4 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.22em;
+  font-size: 1.25em;
   line-height: 1.6em;
 }
 
 p.lead {
   font-size: 1.3em;
   color: gray;
+}
+
+a.navbar-brand {
+  text-transform: uppercase;
 }

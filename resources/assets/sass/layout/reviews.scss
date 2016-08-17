@@ -1,3 +1,4 @@
+// styling for PLURAL review. Used when looping through reviews
 article.reviews {
   margin-bottom: 75px;
 
@@ -6,5 +7,15 @@ article.reviews {
     margin-top: 15px;
   }
 
+}
 
+// styling for a single article review
+article.review {
+  margin-top: 0px;
+  margin-bottom: 75px;
+
+}
+
+.btn-group-container {
+  margin: 30px;
 }
