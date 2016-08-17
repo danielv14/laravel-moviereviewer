@@ -24,10 +24,13 @@ class MovieRequest extends Request
     public function rules()
     {
         return [
-          'title' => 'required',
-          'body' => 'required',
-          'trailer' => 'required',
-          'rating' => 'required|numeric|min:1|max:5'
+          'title'      => 'required',
+          'body'       => 'required',
+          'trailer'    => 'required',
+          'rating'     => 'required|numeric|min:1|max:5',
+          'movieTitle' => 'required',
+          'imdbLink'   => 'required',
+          'rottenLink' => 'required'
         ];
     }
 }

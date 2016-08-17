@@ -19,5 +19,20 @@
 </div>
 
 <div class="form-group">
+  {!! Form::label('movieTitle', 'Title of the movie') !!}
+  {!! Form::text('movieTitle', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+  {!! Form::label('imdbLink', 'IMDb Link') !!}
+  {!! Form::text('imdbLink', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+  {!! Form::label('rottenLink', 'Rotten Tomatoes Link') !!}
+  {!! Form::text('rottenLink', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
   {!! Form::submit($submit, ['class' => 'btn btn-primary form-control']) !!}
 </div>

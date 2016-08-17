@@ -10,7 +10,10 @@ class Movie extends Model
       'title',
       'body',
       'trailer',
-      'rating'
+      'rating',
+      'movieTitle',
+      'imdbLink',
+      'rottenLink'
     ];
 
     /**
