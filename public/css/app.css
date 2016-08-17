@@ -5761,6 +5761,10 @@ button.close {
   color: white;
   padding: 20px 20px; }
 
+@media screen and (max-width: 768px) {
+  .navbar-btn {
+    margin-left: 15px; } }
+
 .btn {
   padding: 8px 22px;
   border: 0px;
