@@ -5,7 +5,7 @@
     <h1 class="text-center">Edit review: {{$review->title}}</h1>
     <hr>
 
-    <div class="col-md-6 col-md-offset-3">
+  
 
     @include('errors.list')
 
@@ -13,6 +13,5 @@
       @include('movies._form', ['submit' => 'Update review'])
     {!! Form::close() !!}
 
-    </div>
   </div>
 @endsection
