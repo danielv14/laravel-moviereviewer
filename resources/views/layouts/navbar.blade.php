@@ -13,8 +13,8 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li><a href="/movies/create">Create Review</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <a href="/movies/create" class="btn btn-success navbar-btn">Review</a>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
