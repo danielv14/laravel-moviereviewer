@@ -1,3 +1,6 @@
+// notification or not
+process.env.DISABLE_NOTIFIER = true;
+
 var elixir = require('laravel-elixir');
 
 // use livereload
