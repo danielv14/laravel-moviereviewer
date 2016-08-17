@@ -5750,6 +5750,8 @@ button.close {
   margin-bottom: 0px !important; }
   .jumbotron h1, .jumbotron p {
     color: white; }
+  .jumbotron p {
+    font-style: italic; }
   .jumbotron h1 {
     margin: 100px 0 0 0; }
   .jumbotron p, .jumbotron a {
