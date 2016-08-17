@@ -1,5 +1,8 @@
 var elixir = require('laravel-elixir');
 
+// use livereload
+require('laravel-elixir-livereload');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -12,5 +15,6 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+  mix.sass('app.scss')
+    .livereload();
 });

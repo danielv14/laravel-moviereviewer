@@ -12,7 +12,7 @@
             $end = '...'
             ) !!}
         <br>
-        
+
         <a href="/movies/{{$movie->id}}" class="btn btn-primary">Read more</a>
 
       </article>
