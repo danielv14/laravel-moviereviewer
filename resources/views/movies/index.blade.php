@@ -22,7 +22,7 @@
               ) !!}
           <br>
 
-          <a href="/movies/{{$movie->id}}" class="btn btn-info">Read review</a>
+          <a href="/movies/{{$movie->id}}" class="btn btn-success">Read review</a>
 
         </article>
       @endforeach

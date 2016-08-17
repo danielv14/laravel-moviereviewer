@@ -7,6 +7,7 @@
 .jumbotron {
   background-color: $brand-primary;
   border-bottom: 25px solid lighten($navbar-default-bg, 4%);
+  margin-bottom: 0px !important;
 
   h1, p {
     color: white;
