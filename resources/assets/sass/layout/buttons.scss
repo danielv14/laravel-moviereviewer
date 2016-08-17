@@ -3,4 +3,11 @@
 .btn {
   padding: 8px 22px;
   border: 0px;
+  transition: background-color .5s ease;
 }
+
+@include btn-bg-hover-lighten("btn-info", $btn-info-bg, 8%);
+@include btn-bg-hover-lighten("btn-primary", $btn-primary-bg, 8%);
+@include btn-bg-hover-lighten("btn-success", $btn-success-bg, 8%);
+@include btn-bg-hover-lighten("btn-warning", $btn-warning-bg, 8%);
+@include btn-bg-hover-lighten("btn-danger", $btn-danger-bg, 8%);

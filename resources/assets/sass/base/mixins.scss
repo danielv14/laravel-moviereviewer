@@ -1,0 +1,19 @@
+/*
+* Mixin to alter btn-bg hover color
+*
+*/
+@mixin btn-bg-hover-darken($class, $color, $amount) {
+  .#{$class} {
+    &:hover {
+      background: darken($color, $amount);
+    }
+  }
+}
+
+@mixin btn-bg-hover-lighten($class, $color, $amount) {
+  .#{$class} {
+    &:hover {
+      background: lighten($color, $amount);
+    }
+  }
+}
