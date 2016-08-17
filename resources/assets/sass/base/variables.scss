@@ -4,22 +4,32 @@
 ***************************************/
 
 // brand colors
-$brand-primary: #8EC0E4;
-$brand-success: #99f19e;
-$brand-info: #a5dff9;
+$brand-primary: #D53882;
+$brand-success: #FCA9D3;
+$brand-info: #C73F7D;
 $brand-warning: #feee7d;
-$brand-danger: #ff7473;
+$brand-danger: #FA4B62;
 
 // navbar
 $navbar-margin-bottom: 0px;
 $navbar-height: 60px;
+$navbar-default-bg: $brand-primary;
+$navbar-border-radius: 0px;
+$navbar-default-color: white;
+$navbar-default-link-color: white;
+$navbar-default-border: $brand-primary;
+$navbar-default-toggle-hover-bg    : none;
+$navbar-default-toggle-icon-bar-bg : white;
+$navbar-default-toggle-border-color: none;
 
 // buttons
 $btn-border-radius-base: 20px;
 
-
+// links
+$link-hover-color: $brand-primary;
 
 
 /***************************************
 * Own variables
 ***************************************/
+$brand-color: #73FFDE;

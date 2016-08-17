@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="jumbotron text-center">
-    <h1>Opinionated movie lover</h1>
+    <h1><span>Scribbles</span> about movies</h1>
     <p class="lead">Reviews about all kinds of movies</p>
   </div>
   <div class="container">
@@ -10,10 +10,14 @@
       @foreach ($movies as $movie)
         <article class="reviews">
           <h2><a href="/movies/{{$movie->id}}">{{$movie->title}}</a></h2>
-          <p>created {{$movie->created_at->diffForHumans()}}</p>
+          <p>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> {{$movie->created_at->diffForHumans()}}
+            <i class="fa fa-film" aria-hidden="true"></i> {{$movie->movieTitle}}
+
+          </p>
           {!! str_limit(
               Markdown::convertToHtml($movie->body),
-              $limit = 400,
+              $limit = 800,
               $end = '...'
               ) !!}
           <br>
