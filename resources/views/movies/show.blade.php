@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Movie Reviewer | ' . $review->title)
+
 @section('content')
   <div class="jumbotron text-center">
     <h1>{{$review->title}}</h1>

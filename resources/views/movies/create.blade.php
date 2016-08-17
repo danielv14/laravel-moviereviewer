@@ -1,5 +1,8 @@
 @extends('app')
 
+@section('title', 'Movie Reviewer | Create review ')
+
+
 @section('content')
 
   <div class="container">

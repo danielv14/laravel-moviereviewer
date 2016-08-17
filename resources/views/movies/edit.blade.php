@@ -1,11 +1,14 @@
 @extends('app')
 
+@section('title', 'Movie Reviewer | Edit review ')
+
+
 @section('content')
   <div class="container">
     <h1 class="text-center">Edit review: {{$review->title}}</h1>
     <hr>
 
-  
+
 
     @include('errors.list')
 
