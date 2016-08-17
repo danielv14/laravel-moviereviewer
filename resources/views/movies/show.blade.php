@@ -15,14 +15,25 @@
       <a href="{{$review->trailer}}" class="btn btn-success">Youtube Trailer</a>
     </div>
   </div>
+
   <div class="container">
       <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-10 col-md-offset-1">
           <article class="review">
             {!! Markdown::convertToHtml($review->body) !!}
           </article>
         </div>
       </div>
+
+      <div class="row text-center btn-action-wrapper">
+        <div class="col-md-6">
+          @include('movies._deleteAction')
+        </div>
+        <div class="col-md-6">
+          <a href="/movies/{{$review->id}}/edit" class="btn btn-success">Update review</a>
+        </div>
+      </div>
+
 
   </div> {{-- end of container --}}
 
