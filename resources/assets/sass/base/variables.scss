@@ -5,8 +5,8 @@
 
 // brand colors
 $brand-primary: #D53882;
-$brand-success: #FCA9D3;
-$brand-info: #C73F7D;
+$brand-success: #73FFDE;
+$brand-info: #FCA9D3;
 $brand-warning: #feee7d;
 $brand-danger: #FA4B62;
 
@@ -32,9 +32,9 @@ $link-hover-color: $brand-primary;
 $input-border-focus: $brand-primary;
 
 // pager (simple pagination)
-$pager-bg: $brand-success;
-$pager-border: $brand-success;
-$pager-hover-bg: $brand-success;
+$pager-bg: $brand-info;
+$pager-border: $brand-info;
+$pager-hover-bg: $brand-info;
 // $pager-active-color: white;
 $pager-disabled-color: darken(white, 10%);
 

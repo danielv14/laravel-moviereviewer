@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <a href="/movies/create" class="btn btn-success navbar-btn">Create review</a>
+        <a href="/movies/create" class="btn btn-info navbar-btn">Create review</a>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

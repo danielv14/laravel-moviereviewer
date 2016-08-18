@@ -1,0 +1,22 @@
+/*
+* Style for ruby flash messages
+*/
+
+#flash-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba($brand-success, 0.90);
+}
+
+.flash-text {
+  padding: 2rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+
+}

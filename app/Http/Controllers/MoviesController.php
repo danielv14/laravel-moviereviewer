@@ -41,15 +41,13 @@ class MoviesController extends Controller
      */
     public function store(MovieRequest $request)
     {
-
-        // Validation is handled in CreateMovieRequest class
-
         // create entry in Database
         Movie::create($request->all());
 
+        session()->flash('flash_message', 'Review has been created');
+
         // redirect to movies index page
         return redirect('/');
-
     }
 
     /**
@@ -89,6 +87,9 @@ class MoviesController extends Controller
 
       $review->update($request->all());
 
+      session()->flash('flash_message', 'Review has been updated');
+
+
       return redirect('/');
 
     }
@@ -104,6 +105,9 @@ class MoviesController extends Controller
         $review = Movie::findOrFail($id);
 
         $review->delete();
+
+        session()->flash('flash_message', 'Review has been deleted');
+
 
         return redirect('/');
     }
