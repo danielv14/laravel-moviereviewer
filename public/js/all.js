@@ -5,7 +5,6 @@ $(document).ready(function() {
     // target notice_wrapper div and fade it out after 2,5 sec
     $('#flash-wrapper').fadeOut("slow", function() {
       $(this).remove();
-      console.log('hello');
     })
   }, 2500);
 });
