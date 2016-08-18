@@ -10,9 +10,9 @@
   </div>
   <div class="container-fluid text-center">
     <div class="btn-group btn-group-container">
-      <a href="{{$review->rottenLink}}" class="btn btn-success" title="Rotten Tomatoes page">RT</a>
-      <a href="{{$review->imdbLink}}" class="btn btn-success" title="IMDb page">IMDb</a>
-      <a href="{{$review->trailer}}" class="btn btn-success" title="Watch trailer on YouTube">Trailer</a>
+      <a href="{{$review->rottenLink}}" class="btn btn-info" title="Rotten Tomatoes page">RT</a>
+      <a href="{{$review->imdbLink}}" class="btn btn-info" title="IMDb page">IMDb</a>
+      <a href="{{$review->trailer}}" class="btn btn-info" title="Watch trailer on YouTube">Trailer</a>
     </div>
   </div>
 
@@ -30,7 +30,7 @@
           @include('movies._deleteAction')
         </div>
         <div class="col-xs-6">
-          <a href="/movies/{{$review->id}}/edit" class="btn btn-success">Update review</a>
+          <a href="/movies/{{$review->id}}/edit" class="btn btn-primary">Update review</a>
         </div>
       </div>
 
