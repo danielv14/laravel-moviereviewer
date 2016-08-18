@@ -3,7 +3,7 @@
 @section('content')
   <div class="jumbotron text-center">
     <h1><span>Scribbles</span> about movies</h1>
-    <p>Reviews from a fanatic viewer</p>
+    <p>Reviews from a fanatic cineast</p>
   </div>
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
