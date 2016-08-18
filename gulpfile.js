@@ -19,5 +19,9 @@ require('laravel-elixir-livereload');
 
 elixir(function(mix) {
   mix.sass('app.scss')
-    .livereload();
+    .scripts([
+      '*.js'
+    ])
+    .livereload()
+
 });

@@ -7,6 +7,9 @@
   @include('layouts.stylesheets')
 </head>
 <body>
+
+  @include('partials.flash')
+
   @include('layouts.navbar')
 
   @yield('content')
