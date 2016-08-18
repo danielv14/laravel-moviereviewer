@@ -32,11 +32,11 @@ $link-hover-color: $brand-primary;
 $input-border-focus: $brand-primary;
 
 // pager (simple pagination)
-$pager-bg: $brand-primary;
-$pager-border: $brand-primary;
-$pager-hover-bg: $brand-primary;
+$pager-bg: $brand-success;
+$pager-border: $brand-success;
+$pager-hover-bg: $brand-success;
 // $pager-active-color: white;
-$pager-disabled-color: darken(white, 20%);
+$pager-disabled-color: darken(white, 10%);
 
 /***************************************
 * Own variables
